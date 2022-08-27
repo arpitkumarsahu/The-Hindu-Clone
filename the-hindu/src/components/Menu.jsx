@@ -71,7 +71,7 @@ export const Menu = ({handleToggle}) => {
               <b>World</b>
             </p>
             <p>
-              <b onClick={() => navigate("/india")}>India</b>
+              <b onClick={() => navigate("/news/india")}>India</b>
             </p>
             <p>
               <b>North East Indian</b>
@@ -88,7 +88,7 @@ export const Menu = ({handleToggle}) => {
             <p>
               <b>Photos</b>
             </p>
-            <p>Entertainment</p>
+            <p onClick={() => navigate("/entertainment")}>Entertainment</p>
             <p>Sports</p>
             <p>News</p>
             <p>Lifestyle</p>
@@ -139,7 +139,7 @@ export const Menu = ({handleToggle}) => {
         <Flex>
           <div>
             <p>
-              <b>Entertainment</b>
+              <b onClick={() => navigate("/entertainment")}>Entertainment</b>
             </p>
             <p>Hollywood</p>
             <p>Bollywood</p>

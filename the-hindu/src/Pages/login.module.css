@@ -1,0 +1,153 @@
+/* stylelint-disable rule */
+    /* stylelint-enable rule */
+    .loginHeader{
+        height: 40px;
+        width: 75%;
+        margin: auto;
+        border-bottom: 1px solid grey;
+        display: flex;
+        justify-content: space-between;
+    }
+    .loginHeader>div{
+        width: 20%;
+        /* border: 1px solid red; */
+        height: 100%;
+    }
+    .loginHeader>div:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(174,183,197);
+        font-size: 15px;
+    }
+    .loginHeader>div:first-child:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .loginHeader>div:nth-child(2){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginHeader img{
+        cursor: pointer;
+    }
+    
+    /* login form */
+    
+    .loginForm{
+        height: auto;
+        width: 30%;
+        border: 3px solid rgb(174,183,197);
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 20px
+    }
+    .loginForm h2{
+        font-size: 24px;
+    }
+    .logInGoogle{
+        height: 180px;
+        /* border: 1px solid black; */
+        margin-top: 10%
+    }
+    .logInGoogle>div{
+        height: 24%;
+        width: 80%;
+        border: 1px solid rgb(174,183,197);
+        margin: auto;
+        margin-top: 3%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(133,133,133);
+        font-size: 14px;
+        letter-spacing: .21px;
+        cursor: pointer;
+    }
+    .logInGoogle strong{
+        margin-left: 1%
+    }
+    /* p {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        color: rgb(133,133,133)
+      } */
+     /* p:before, p:after{
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid rgb(133,133,133);
+        margin: auto;
+      }
+      p:before {
+        margin-right: 1%
+      }
+     p:after {
+        margin-left: 1%;
+      } */
+    
+      .info{
+        width: 80%;
+        color: #6c798f;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .inputBox{
+        height: 25%;
+        width: 80%;
+        /* border: 1px solid black; */
+        margin: auto;
+        margin-top: 8%;
+      }
+      .inputBox input{
+        width: 98%;
+        height: 20%;
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        font-size: 15px;
+        padding: 5px;
+      }
+      .inputBox button{
+        width: 100%;
+        margin-top: 7%;
+        background-color: #fff;
+        color: rgb(69,112,216);
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 13px 0px;
+        cursor: pointer;
+        border: 1px solid;
+        margin-bottom: 5%;
+      }
+      .inputBox button:hover{
+        background-color: rgb(69,112,216) ;
+        color: #fff;
+      }
+      .newTab{
+        color: #6c798f;
+        font-size: 15px;
+      }
+      .createAcc{
+        color: rgb(69,112,216);
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        margin-bottom: 5%;
+      }
+    
+      /* alert message */
+    
+      .alertMsg{
+        width: 80% ;
+        color: red;
+        border: 1px solid red;
+        padding: 15px 30px;
+        border-radius: 10px;
+      }
+    

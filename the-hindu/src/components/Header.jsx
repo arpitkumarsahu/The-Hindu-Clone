@@ -11,6 +11,7 @@ import {
   FaSearch,
   FaBars
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const TopDiv = styled.div`
   display: flex;
@@ -101,9 +102,11 @@ line-height: 25px;
 `
 
 const Trial = styled.div`
+
 font-family: "Fira Sans",sans-serif;
 font-weight: 600;
 & button {
+  cursor: pointer;
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 1.2px;
@@ -114,13 +117,18 @@ font-weight: 600;
   padding: 6px 13px;
   border-radius: 5px;
 }
+& button:hover {
+  text-decoration: underline;
+}
   
 `
 
 const Subscribe = styled.div`
+
 font-family: "Fira Sans",sans-serif;
 font-weight: 600;
 & button {
+  cursor: pointer;
   font-weight: 600;
   line-height: 29px;
   border: none;
@@ -139,9 +147,11 @@ font-weight: 600;
 `
 
 const Login = styled.div`
+cursor: pointer;
 font-family: "Fira Sans",sans-serif;
 font-weight: 600;
 & button {
+  cursor: pointer;
   font-weight: 600;
   line-height: 29px;
   border: 1px solid #00419b;
@@ -165,7 +175,8 @@ const MainDiv = styled.div`
  margin: auto;
 `
 
-const Header = () => {
+const Header = ({ handleToggle }) => {
+  const navigate = useNavigate();
   return (
     <MainDiv>
       <Div>
@@ -200,7 +211,7 @@ const Header = () => {
         
       </Div>
       <ImgDiv>
-        <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="The Hindu" />
+        <img onClick={() => navigate("/")} src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="The Hindu" />
         <div>
           <p>LATEST NEWS</p>
           <p>MONDAY, AUGUST 29 , 2022</p>
@@ -209,14 +220,14 @@ const Header = () => {
         
       </ImgDiv>
       <BottomDiv>
-          <i><FaBars/></i>
+          <i><FaBars onClick={handleToggle}/></i>
           <Category>
-            <p>TODAY'S PAPER</p>
+            <p onClick={() => navigate("/news/india")}>TODAY'S PAPER</p>
             <p>NEWS</p>
             <p>OPINION</p>
             <p>BUSINESS</p>
             <p>SPORTS</p>
-            <p>ENTERTAINMENT</p>
+            <p onClick={() => navigate("/entertainment")}>ENTERTAINMENT</p>
             <p>CROSSWORD+</p>
             <p>SCIENCE</p>
           </Category>
@@ -227,7 +238,7 @@ const Header = () => {
             <button>SUBSCRIBE NOW</button>
           </Subscribe>
           <Login>
-            <button>LOGIN</button>
+            <button onClick={() => navigate("/login")}>LOGIN</button>
           </Login>
       </BottomDiv>
     </MainDiv>

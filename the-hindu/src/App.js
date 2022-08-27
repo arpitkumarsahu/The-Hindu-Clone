@@ -1,27 +1,29 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
-import { Blog } from './components/Blog';
-import TopComponents from './components/TopComponent';
-// import { Menu } from './components/Menu';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-// import { Home } from './components/Home';
-// import Singlepage from './components/SinglePage';
-// import Slideshow from './components/SlideShow';
+import { Menu } from './components/Menu';
+import HomePage from './Pages/HomePage';
+
+
 
 
 function App() {
+
+  const [toggle, setToggle] = useState(true);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
-      <div>
-        <TopComponents/>
-        {/* <Blog/> */}
-        {/* <Menu/> */}
-          {/* <Slideshow />
-          <Singlepage />
-          <Header /> 
-          <Home/>
-          <Footer/> */}
-      </div>
+    <div className="App">
+    {toggle ? (
+      <HomePage handleToggle={handleToggle} />
+    ) : (
+      <Menu handleToggle={handleToggle} />
+    )}
+   
+  </div>
         
   );
 }

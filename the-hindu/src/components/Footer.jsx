@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn, FaMobile, FaSearch, FaTelegram, FaTwitter } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 
 
@@ -145,6 +146,7 @@ const LastDiv = styled.div`
 `
 
 const Footer =()=> {
+    const navigate = useNavigate();
   return (
     
         <Foot>
@@ -174,7 +176,7 @@ const Footer =()=> {
                 <p>e-paper</p>
                 </TopDiv>
                 <ImgDiv>
-                    <img src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="" />
+                    <img onClick={() => navigate("/")} src="https://www.thehindu.com/theme/images/th-online/logo.png" alt="" />
                 </ImgDiv>
                 <SearchDiv>
                 <input type="text" placeholder="search here" />

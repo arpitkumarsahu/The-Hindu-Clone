@@ -16,6 +16,10 @@
     /* margin-left: 20px; */
     overflow: hidden;
   }
+
+  .a >p :hover {
+    color: red;
+  }
   
   .b {
     height: 190px;

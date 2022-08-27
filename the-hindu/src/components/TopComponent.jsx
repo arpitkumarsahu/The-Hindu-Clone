@@ -13,7 +13,7 @@ const TopComponents = () => {
           <div className={styles.ragc}>
             <div className={styles.a}>
               <img
-                src="https://images.indianexpress.com/2022/06/Albares-Jaishankar.jpg"
+                src="https://images.yourstory.com/cs/2/a9efa9c02dd911e9adc52d913c55075e/MasaiSchool-1639974036906.jpg?fm=auto&ar=2:1&mode=crop&crop=faces&w=720"
                 alt=""
                 width="100%"
                 height="150"
@@ -26,8 +26,7 @@ const TopComponents = () => {
                   fontFamily: "Helvetica",
                 }}
               >
-                Spanish Foreign Minister José Manuel Albares: 'NATO must reach
-                out to all countries like India which might be good partners'
+                Masai School acquires Data Analytics institute Prepleaf for $1M
               </p>
             </div>
             <div className={styles.b}>
