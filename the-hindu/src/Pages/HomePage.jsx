@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Footer from "../components/Footer";
-// import Ticker from "./components/Ticker";
 import { Blog } from "../components/Blog";
 import { Best } from "../components/Best";
 import { Home } from "../components/Home";
@@ -14,15 +13,6 @@ import { Login } from "./Login";
 import { Register } from "./Register";
 import { Entertainment } from "../components/Entertainment";
 import { India } from "../components/India";
-// import { India } from "./../components/India";
-// import { Cities } from "./../components/Cities";
-// import { Entertainment } from "./../components/Entertainment";
-// import { Login } from "./Login";
-// import { Register } from "./Register";
-// import Singlepage from "../components/Singlepage";
-// import Subscribe from './../components/Subscribe';
-// import Ticcker from "../components/Ticker";
-
 
 const FlexWrapper = styled.div`
   display: flex;
@@ -74,21 +64,6 @@ function HomePage({ handleToggle }) {
             </FlexWrapper>
           }
         />
-        {/* <Route
-          path="/cities"
-          element={
-            <FlexWrapper>
-              <div>
-                <TopComponents />
-                <Cities />
-              </div>
-              <div>
-                <Blog />
-                <Best />
-              </div>
-            </FlexWrapper>
-          }
-        /> */}
         <Route
           path="/entertainment"
           element={

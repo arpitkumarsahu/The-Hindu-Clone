@@ -62,8 +62,8 @@ export const Best = () => {
   let bst = [
     {
       title: "Entertainment",
-      img: "https://images.indianexpress.com/2022/06/nikamma-shilpa-shetty-1200.jpg?resize=150,83",
-      desc: "Nikamma movie review: Shilpa Shetty’s comeback makes you worry about Bollywood’s future",
+      img: "https://www.financialexpress.com/wp-content/uploads/2022/04/Masai_Logo.jpg",
+      desc: "Masai School launches tech internship guarantee program for college students",
     },
     {
       title: "Entertainment",

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import styles from "./login.module.css";
 import { BsArrowLeft } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -32,7 +32,8 @@ export const Login = () => {
         </div>
         <div>
           <img
-            width="100%"change
+            width="100%"
+            change
             src="https://www.thehindu.com/theme/images/th-online/logo.png"
             alt="logo"
           />
@@ -42,7 +43,7 @@ export const Login = () => {
       <div className={styles.loginForm}>
         <h2>Welcome back</h2>
         <div className={styles.logInGoogle}>
-          <div >
+          <div>
             <FcGoogle
               style={{ width: "21px", height: "21px", marginRight: "2%" }}
             />{" "}
@@ -125,9 +126,6 @@ export const Login = () => {
           ) : (
             <button onClick={handleClick}>Continue</button>
           )}
-          {/* <button onClick={handleClick}>
-            {change ? "Sign In" : "Continue"}
-          </button> */}
           <div className={styles.newTab}>New to The The Hindu?</div>
           <div
             className={styles.createAcc}

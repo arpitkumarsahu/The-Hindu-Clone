@@ -67,7 +67,7 @@ export const News = () => {
     <>
       {data
         ? data.map((e) => (
-            <Wrapper >
+            <Wrapper>
               <div>
                 <Img src={e.image} alt="" />
               </div>

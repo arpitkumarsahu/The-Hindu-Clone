@@ -16,7 +16,9 @@ function Singlepage() {
         <div className={styles.headnews}>
           <div className={styles.breakingti}>Must Read</div>
 
-          <div className={styles.breakingbox}><Ticcker /></div>
+          <div className={styles.breakingbox}>
+            <Ticcker />
+          </div>
         </div>
         <div style={{ marginBottom: "-25px" }}>
           <h1 className={styles.heading}>{news.heading}</h1>
@@ -81,8 +83,8 @@ function Singlepage() {
               width="50"
             ></img>
             <p className={styles.formtitle}>
-              Subscribe to receive the day's headlines from The Hindu
-              straight in your inbox
+              Subscribe to receive the day's headlines from The Hindu straight
+              in your inbox
             </p>
 
             <input
@@ -94,7 +96,7 @@ function Singlepage() {
             <input
               type={"submit"}
               value={"Subscribe"}
-              style={{ background: "#00419b" , border: "none" }}
+              style={{ background: "#00419b", border: "none" }}
               className={styles.inputsubmit}
             ></input>
           </div>

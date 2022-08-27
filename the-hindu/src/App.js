@@ -1,14 +1,9 @@
-
-import { useState } from 'react';
-import './App.css';
-import { Menu } from './components/Menu';
-import HomePage from './Pages/HomePage';
-
-
-
+import { useState } from "react";
+import { Menu } from "./components/Menu";
+import HomePage from "./Pages/HomePage";
+import "./App.css";
 
 function App() {
-
   const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {
@@ -17,14 +12,12 @@ function App() {
 
   return (
     <div className="App">
-    {toggle ? (
-      <HomePage handleToggle={handleToggle} />
-    ) : (
-      <Menu handleToggle={handleToggle} />
-    )}
-   
-  </div>
-        
+      {toggle ? (
+        <HomePage handleToggle={handleToggle} />
+      ) : (
+        <Menu handleToggle={handleToggle} />
+      )}
+    </div>
   );
 }
 

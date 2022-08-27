@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "./Header";
 import { Menu } from "./Menu";
 
-
 export const HomeHeader = () => {
   const [toggle, setToggle] = useState(true);
 

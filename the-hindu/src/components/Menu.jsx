@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { FaRegWindowClose } from "react-icons/fa";
 
 const Wrapper = styled.div`
@@ -51,15 +51,15 @@ const Icon = styled.div`
   }
 `;
 
-export const Menu = ({handleToggle}) => {
+export const Menu = ({ handleToggle }) => {
   const navigate = useNavigate();
 
   return (
     <Wrapper>
       <Icon>
-
-      <i><FaRegWindowClose onClick={handleToggle} /></i>
-        
+        <i>
+          <FaRegWindowClose onClick={handleToggle} />
+        </i>
       </Icon>
       <Main>
         <Flex>

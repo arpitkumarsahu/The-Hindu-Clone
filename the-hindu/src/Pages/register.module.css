@@ -1,72 +1,72 @@
-.registerHeader{
-    height: 40px;
-    width: 75%;
-    margin: auto;
-    border-bottom: 1px solid grey;
-    display: flex;
-    justify-content: space-between;
+.registerHeader {
+  height: 40px;
+  width: 75%;
+  margin: auto;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
 }
-.registerHeader>div{
-    width: 20%;
-    /* border: 1px solid red; */
-    height: 100%;
+.registerHeader > div {
+  width: 20%;
+  /* border: 1px solid red; */
+  height: 100%;
 }
-.registerHeader>div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(174,183,197);
-    font-size: 15px;
+.registerHeader > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(174, 183, 197);
+  font-size: 15px;
 }
-.registerHeader>div:first-child:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.registerHeader > div:first-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.registerHeader>div:nth-child(2){
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.registerHeader > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.registerHeader img{
-    cursor: pointer;
+.registerHeader img {
+  cursor: pointer;
 }
 
 /* register form */
 
-.registerForm{
-    height: auto;
-    width: 30%;
-    border: 3px solid rgb(174,183,197);
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 20px
+.registerForm {
+  height: auto;
+  width: 30%;
+  border: 3px solid rgb(174, 183, 197);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
 }
 
-.registerForm h2{
-    font-size: 24px;
+.registerForm h2 {
+  font-size: 24px;
 }
-.logInGoogle{
-    height: 180px;
-    /* border: 1px solid black; */
-    margin-top: 10%
+.logInGoogle {
+  height: 180px;
+  /* border: 1px solid black; */
+  margin-top: 10%;
 }
-.logInGoogle>div{
-    height: 24%;
-    width: 80%;
-    border: 1px solid rgb(174,183,197);
-    margin: auto;
-    margin-top: 3%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(133,133,133);
-    font-size: 14px;
-    letter-spacing: .21px;
-    cursor: pointer;
+.logInGoogle > div {
+  height: 24%;
+  width: 80%;
+  border: 1px solid rgb(174, 183, 197);
+  margin: auto;
+  margin-top: 3%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(133, 133, 133);
+  font-size: 14px;
+  letter-spacing: 0.21px;
+  cursor: pointer;
 }
-.logInGoogle strong{
-    margin-left: 1%
+.logInGoogle strong {
+  margin-left: 1%;
 }
 
 /* p {
@@ -88,55 +88,55 @@
  p:after {
     margin-left: 1%;
   } */
-  h2{
-    margin-bottom: 0%;
-  }
+h2 {
+  margin-bottom: 0%;
+}
 
-  h2+span{
-    color: grey;
-  }
+h2 + span {
+  color: grey;
+}
 
-  .inputBox{
-    height: 25%;
-    width: 80%;
-    /* border: 1px solid black; */
-    margin: auto;
-    margin-top: 8%;
-  }
-  .inputBox input{
-    width: 98%;
-    height: 20%;
-    border: none;
-    border-bottom: 1px solid grey;
-    outline: none;
-    font-size: 15px;
-    padding: 5px;
-  }
-  .inputBox button{
-    width: 100%;
-    margin-top: 7%;
-    background-color: #fff;
-    color: rgb(69,112,216);
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 13px 0px;
-    cursor: pointer;
-    border: 1px solid;
-    margin-bottom: 5%;
-  }
-  .inputBox button:hover{
-    background-color: rgb(69,112,216) ;
-    color: #fff;
-  }
-  .newTab{
-    color: #6c798f;
-    font-size: 15px;
-  }
-  .createAcc{
-    color: rgb(69,112,216);
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-    margin-bottom: 5%;
-  }
+.inputBox {
+  height: 25%;
+  width: 80%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 8%;
+}
+.inputBox input {
+  width: 98%;
+  height: 20%;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+  font-size: 15px;
+  padding: 5px;
+}
+.inputBox button {
+  width: 100%;
+  margin-top: 7%;
+  background-color: #fff;
+  color: rgb(69, 112, 216);
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 13px 0px;
+  cursor: pointer;
+  border: 1px solid;
+  margin-bottom: 5%;
+}
+.inputBox button:hover {
+  background-color: rgb(69, 112, 216);
+  color: #fff;
+}
+.newTab {
+  color: #6c798f;
+  font-size: 15px;
+}
+.createAcc {
+  color: rgb(69, 112, 216);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}

@@ -54,7 +54,7 @@ const TopComponents = () => {
         <div className={styles.rajat}>
           <div>
             <img
-              src="https://images.indianexpress.com/2022/06/Ranchi-violence-security-bolstered-internet-restored.jpg?resize=450,250"
+              src="https://images.yourstory.com/cs/2/a9efa9c02dd911e9adc52d913c55075e/MasaiSchoolsfounders-1616577248933.jpg?fm=auto&ar=2:1&mode=crop&crop=faces&w=720"
               alt=""
               width="100%"
               height="150"
@@ -67,7 +67,8 @@ const TopComponents = () => {
                 fontFamily: "Helvetica",
               }}
             >
-              Ranchi violence: ‘Mob assaulted us after asking our names’
+              Edtech company Masai School raises funds from multiple unicorn
+              founders
             </p>
           </div>
           <div>
@@ -90,7 +91,7 @@ const TopComponents = () => {
           </div>
           <div>
             <img
-              src="https://images.indianexpress.com/2022/06/ajit-doval-12.jpg?resize=450,250"
+              src="https://assets.telegraphindia.com/telegraph/2022/Mar/1648563237_masai-partners-with-nsdc-1.jpg"
               alt=""
               width="100%"
               height="150"
@@ -103,7 +104,7 @@ const TopComponents = () => {
                 fontFamily: "Helvetica",
               }}
             >
-              Doval in virtual NSAs' meet in run-up to BRICS meeting
+              NSDC and Masai join hands to prepare students for tech jobs
             </p>
           </div>
         </div>

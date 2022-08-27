@@ -85,7 +85,9 @@ export const Blog = () => {
   return (
     <Outer>
       <Head>
-        <i><FaCircle/></i>
+        <i>
+          <FaCircle />
+        </i>
         <p>LIVE</p>
         <p>BLOG</p>
       </Head>

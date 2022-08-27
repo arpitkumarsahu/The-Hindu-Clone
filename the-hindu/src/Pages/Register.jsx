@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./register.module.css";
 import { BsArrowLeft } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -14,7 +14,6 @@ export const Register = () => {
   const [confirmPass, setConfirmPass] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  
 
   return (
     <div className={styles.registerParent}>
@@ -35,7 +34,7 @@ export const Register = () => {
         <h2>Create your account</h2>
         <span>It is quick and easy</span>
         <div className={styles.logInGoogle}>
-          <div >
+          <div>
             <FcGoogle
               style={{ width: "21px", height: "21px", marginRight: "2%" }}
             />{" "}
