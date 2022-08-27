@@ -1,0 +1,73 @@
+/* .leftrg {
+  height: 722px;
+  width: 55%;
+  border: 5px solid pink;
+} */
+
+.leftToprg {
+    width: 65%;
+    /* border: 1px solid grey; */
+  }
+  
+  .a {
+    height: 180px;
+    width: 100%;
+    /* border: 1px solid grey; */
+    /* margin-left: 20px; */
+    overflow: hidden;
+  }
+  
+  .b {
+    height: 190px;
+    width: 100%;
+    /* border: 1px solid grey; */
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    overflow: hidden;
+  
+  }
+  
+  .rajat {
+    width: 100%;
+    display: flex;
+    gap: 3%;
+    border-top: 1px solid #7a7a7a;
+    overflow: hidden;
+    text-align: left;
+    color: #444;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+  .rajat img {
+    height: 120px;
+  }
+  
+  .rajat > div {
+    width: 31%;
+    height: 190px;
+    /* border: 1px solid red; */
+  }
+  
+  .chacha {
+    width: 100%;
+    /* border: 5px solid blue; */
+  }
+  
+  .leftFlex {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    /* border: 3px solid red; */
+  }
+  
+  .ragc {
+    width: 32%;
+    /* border: 3px solid blue; */
+    text-align: left;
+    color: #444;
+  }
+  
+  .ragc img{
+      width: 100%;
+      height: 120px;
+  }
