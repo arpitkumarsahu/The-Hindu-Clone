@@ -36,7 +36,7 @@ export const Login = () => {
 
   // useEffect(()=>{
   //   setValue(localStorage.getItem("token"))
-  // },[])
+  //  // // },[])
 
   const handleClick = () => {
     if (!id) {
