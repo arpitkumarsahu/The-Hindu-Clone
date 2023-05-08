@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./login.module.css";
 import { BsArrowLeft } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
@@ -8,13 +8,35 @@ import { MdAlternateEmail } from "react-icons/md";
 import { BiLock } from "react-icons/bi";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { auth, provider } from "../firebase/config";
+import { signInWithPopup } from "firebase/auth";
+import { useDispatch } from "react-redux";
+import { setToken } from "../Redux/action";
 
 export const Login = () => {
   const [id, setId] = useState("");
+  const [value, setValue] = useState("");
   const [password, setPassword] = useState("");
   const [change, setChange] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  
+
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider).then((data) => {
+      // console.log(data);
+      setValue(data.user.accessToken);
+      // localStorage.setItem("token", data.user.accessToken);
+      dispatch(setToken(data.user.accessToken))
+      navigate('/')
+    });
+  };
+
+  // useEffect(()=>{
+  //   setValue(localStorage.getItem("token"))
+  // },[])
 
   const handleClick = () => {
     if (!id) {
@@ -43,7 +65,7 @@ export const Login = () => {
       <div className={styles.loginForm}>
         <h2>Welcome back</h2>
         <div className={styles.logInGoogle}>
-          <div>
+          <div onClick={handleGoogleSignIn}>
             <FcGoogle
               style={{ width: "21px", height: "21px", marginRight: "2%" }}
             />{" "}

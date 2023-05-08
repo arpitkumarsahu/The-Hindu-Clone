@@ -6,7 +6,7 @@ import { News } from "./News";
 export const Entertainment = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("https://arpit-fake-server.herokuapp.com/sports")
+    fetch("https://caramel-forested-death.glitch.me/sports")
       .then((d) => d.json())
       .then((d) => dispatch(getData(d)))
       .catch((e) => console.log(e));

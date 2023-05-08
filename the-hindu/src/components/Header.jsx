@@ -12,6 +12,10 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { removeToken } from "../Redux/action";
 
 const TopDiv = styled.div`
   display: flex;
@@ -167,6 +171,21 @@ const MainDiv = styled.div`
 `;
 
 const Header = ({ handleToggle }) => {
+
+  const [token,setToken] = useState('')
+  const userToken = useSelector((state)=>state.token)
+  const dispatch =  useDispatch()
+
+  useEffect(()=>{
+    setToken(userToken)
+  },[userToken])
+
+  const handleLogout = ()=>{
+    // localStorage.clear()
+    // window.location.reload()
+    dispatch(removeToken())
+  }
+
   const navigate = useNavigate();
   return (
     <MainDiv>
@@ -235,7 +254,8 @@ const Header = ({ handleToggle }) => {
           <button>SUBSCRIBE NOW</button>
         </Subscribe>
         <Login>
-          <button onClick={() => navigate("/login")}>LOGIN</button>
+          {/* <button onClick={() => navigate("/login")}>LOGIN</button> */}
+          {token ? <button onClick={handleLogout}>LOGOUT</button> : <button onClick={() => navigate("/login")}>LOGIN</button>}
         </Login>
       </BottomDiv>
     </MainDiv>

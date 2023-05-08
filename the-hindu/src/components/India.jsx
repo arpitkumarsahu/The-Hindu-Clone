@@ -6,7 +6,7 @@ import { News } from "./News";
 export const India = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    fetch("https://arpit-fake-server.herokuapp.com/india")
+    fetch("https://caramel-forested-death.glitch.me/india")
       .then((d) => d.json())
       .then((d) => dispatch(getData(d)))
       .catch((e) => console.log(e));
